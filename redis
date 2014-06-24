@@ -28,8 +28,8 @@ then
         REDIS_PORT=${REDIS_PORT_DEFAULT}
     fi
     echo "daemonize yes"        >  ${REDIS_CONF}
-    echo "port $REDIS_PORT"     >> ${REDIS_CONF}
-    echo "pidfile $REDIS_PID"   >> ${REDIS_CONF}
+    echo "port ${REDIS_PORT}"   >> ${REDIS_CONF}
+    echo "pidfile ${REDIS_PID}" >> ${REDIS_CONF}
 
     redis-server ${REDIS_CONF}
 
